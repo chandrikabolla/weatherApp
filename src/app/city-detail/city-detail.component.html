@@ -1,0 +1,10 @@
+<button (click)="goBack()">go back</button>
+<div *ngIf="city">
+<h2>{{city.name | uppercase}} Details</h2>
+<div >name:{{city.name}}</div>{{city.temperature}}
+<div>
+	<label>name:
+		<input [(ngModel)]="city.name" placeholder="city">
+	</label>
+</div>
+</div>

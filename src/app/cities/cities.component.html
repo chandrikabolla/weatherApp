@@ -1,0 +1,11 @@
+<!-- <h2>{{city.name | uppercase}} Details</h2>
+<div><span>name: </span>{{city.name}}</div>
+<div><span>temperature:</span>{{city.temperature}}</div> -->
+ <h2>My cities</h2>
+<ul class="cities">
+	<li *ngFor="let city of cities" (click)="onSelect(city)">
+		<a routerLink="/detail/{{city.name}}">
+		<span class="badge">{{city.name}}</span>
+	</a>
+	</li>
+</ul> 
